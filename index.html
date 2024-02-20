@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic image</title>
+    <style>
+        .bdy{
+            background: url(back.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bdy">
+    <div class="container" align="center">
+
+        <img src="1.jpg" alt="This is the big photo" height="450px" width="450px" style="border: 5px dotted blue;" id="bigimage">
+        <div class="row">
+
+            <img onclick="photos()" src="2.jpg" alt="2nd" height="150px" width="150px" style="border: 3px solid red;">
+            <img onclick="photos3()" src="3.jpg" alt="3rd" height="150px" width="150px" style="border: 3px solid red;">
+            <img onclick="photos4()"src="4.jpg" alt="4th" height="150px" width="150px" style="border: 3px solid red;">
+            <img onclick="photos5()" src="5.jpg" alt="5th" height="150px" width="150px" style="border: 3px solid red;">
+
+        </div>
+    </div>
+
+    <script>
+
+        function photos() {
+
+            var image = document.getElementById("bigimage");
+            image.src = "2.jpg";
+        }
+
+        function photos3() {
+
+var image = document.getElementById("bigimage");
+image.src = "3.jpg";
+}
+
+function photos4() {
+
+var image = document.getElementById("bigimage");
+image.src = "4.jpg";
+}
+
+function photos5() {
+
+var image = document.getElementById("bigimage");
+image.src = "5.jpg";
+}
+
+    </script>
+</body>
+</html>
